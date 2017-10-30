@@ -77,7 +77,7 @@ C       Read period, maxeps dir flag and gm intensities
         read (20,*,ERR=2005) nInten(iProb), (testInten(iProb,j), j=1,nInten(iProb))
         call CheckDim ( nInten(iProb), MAX_INTEN, 'MAX_INTEN' )
         period(iProb) = specT
-x        write (*,'( i5,f10.3)') iProb, period(iProb)
+c        write (*,'( i5,f10.3)') iProb, period(iProb)
 
 C       Read in the suite of attenution models and wts for each attentype
         do j=1,nattentype

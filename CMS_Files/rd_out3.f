@@ -4,7 +4,7 @@ c      implicit none
 
       character*80 file1, dummy, fname(MAX_FLT)
       integer nRd, nFlt, nProb, nAmp(MAX_PROB)
-      integer iProb, iAtten, iFlt, iAmp, k
+      integer iProb, iAtten, iFlt, iAmp, k, testnum
       real lat, long, version
       real segModelwt(MAX_FLT),al_segwt(MAX_FLT),
      1     mindist(MAX_FLT),Haz(MAX_PROB,MAX_INTEN,MAX_FLT)

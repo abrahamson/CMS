@@ -119,11 +119,11 @@ c     Coeff from SWUS report, Table 7.3.3-2
 
 c     Set the branch to use for the PhiSS_CA2  model
       if ( iBranch .eq. 1 ) then
-        call interp_phiSS ( a_low, b_low, period, specT, a, b, iflag ) 
+        call interp_phiSS ( a_low, c_low, period, specT, a, c, iflag ) 
       elseif ( iBranch .eq. 2 ) then
-        call interp_phiSS ( a_central, b_central, period, specT, a, b, iflag ) 
+        call interp_phiSS ( a_central, c_central, period, specT, a, c, iflag ) 
       elseif ( iBranch .eq. 3 ) then
-        call interp_phiSS ( a_high, b_high, period, specT, a, b,iflag )      
+        call interp_phiSS ( a_high, c_high, period, specT, a, c, iflag )      
       endif
 
 c     From SWUS eq 7.3.3-1ab
